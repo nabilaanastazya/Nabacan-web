@@ -150,13 +150,13 @@ header {
 .hero-content h1 {
     font-size: 4rem;
     color: var(--primary-blue);
-    margin-bottom: 0.5rem;
+    margin-bottom: -2rem;
 }
 
 .hero-content h2 {
     font-size: 3rem;
     color: var(--primary-blue);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .hero-content p {
@@ -405,8 +405,9 @@ header {
 
 .section-subheader {
     color: var(--primary-blue);
-    font-weight: 600;
+    font-weight: 1200;
     margin-bottom: 0.5rem;
+    font-size: 3rem;
 }
 
 .section-title {
