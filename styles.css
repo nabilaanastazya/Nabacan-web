@@ -56,6 +56,139 @@ button {
 }
 
 /* Header Styles */
+/* Sticky Header */
+header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+/* Portfolio Modal */
+.portfolio-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-caption {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form Success Message */
+.form-success {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Animation on Scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Menu Button Animation */
+.menu-btn.open button {
+    transform: rotate(90deg);
+}
+
+.menu-btn button {
+    transition: transform 0.3s ease;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile Navigation */
+.nav-links {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        opacity: 0;
+    }
+    
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+}
+
+/* Portfolio Filter Animation */
+.portfolio-item {
+    transition: all 0.3s ease;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -244,6 +377,71 @@ header {
 .btn-download:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(48, 86, 211, 0.4);
+}
+/* Animasi Khusus */
+.animate__delay-1s {
+  animation-delay: 0.5s;
+}
+
+.animate__delay-2s {
+  animation-delay: 1s;
+}
+
+.animate__delay-3s {
+  animation-delay: 1.5s;
+}
+
+.animate__slower {
+  animation-duration: 3s;
+}
+
+/* Efek hover untuk elemen interaktif */
+.service-item:hover, 
+.portfolio-item:hover, 
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
+/* Pulse animation for CTA buttons */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.btn-download:hover, 
+.btn-submit:hover {
+  animation: pulse 1.5s infinite;
+}
+
+/* Sound wave animation for voice over service */
+@keyframes soundWave {
+  0% { transform: scaleY(0.2); }
+  50% { transform: scaleY(1); }
+  100% { transform: scaleY(0.2); }
+}
+
+.sound-wave {
+  display: inline-block;
+  width: 4px;
+  height: 15px;
+  background: white;
+  margin: 0 2px;
+  animation: soundWave 1.2s infinite ease-in-out;
+}
+
+.sound-wave:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.sound-wave:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.sound-wave:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.sound-wave:nth-child(5) {
+  animation-delay: 1.2s;
 }
 
 /* Services Section */
@@ -650,4 +848,69 @@ footer {
     .social-links {
         gap: 1rem;
     }
+    /* Animasi Khusus */
+.animate__delay-1s {
+    animation-delay: 0.5s;
+  }
+  
+  .animate__delay-2s {
+    animation-delay: 1s;
+  }
+  
+  .animate__delay-3s {
+    animation-delay: 1.5s;
+  }
+  
+  .animate__slower {
+    animation-duration: 3s;
+  }
+  
+  /* Efek hover untuk elemen interaktif */
+  .service-item:hover, 
+  .portfolio-item:hover, 
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Pulse animation for CTA buttons */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .btn-download:hover, 
+  .btn-submit:hover {
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Sound wave animation for voice over service */
+  @keyframes soundWave {
+    0% { transform: scaleY(0.2); }
+    50% { transform: scaleY(1); }
+    100% { transform: scaleY(0.2); }
+  }
+  
+  .sound-wave {
+    display: inline-block;
+    width: 4px;
+    height: 15px;
+    background: white;
+    margin: 0 2px;
+    animation: soundWave 1.2s infinite ease-in-out;
+  }
+  
+  .sound-wave:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .sound-wave:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  .sound-wave:nth-child(4) {
+    animation-delay: 0.9s;
+  }
+  .sound-wave:nth-child(5) {
+    animation-delay: 1.2s;
+  }
 }

@@ -7,10 +7,20 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Additional CSS for animation triggers */
+        [data-animate] {
+            opacity: 0;
+        }
+        
+        .animated {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+    <header class="animate__animated animate__fadeInDown">
         <div class="logo">
             <a href="#home">Nabila Creation</a>
         </div>
@@ -32,13 +42,13 @@
         <!-- Home Section -->
         <section id="home" class="hero-section">
             <div class="hero-container">
-                <div class="hero-image">
+                <div class="hero-image animate__animated animate__fadeInLeft animate__delay-1s">
                     <img src="IMG/nabacan.jpg" alt="Nabila's portrait">
                 </div>
                 <div class="hero-content">
                     <h1 class="animate__animated animate__jackInTheBox">I'm Nabila</h1>
-                    <h2>Your Next Talent</h2>
-                    <p>Creativity is my passion and this is where passion meets purpose. Ready to bring fresh ideas to life? Let's make something amazing together!</p>
+                    <h2 class="animate__animated animate__fadeInRight animate__delay-1s">Your Next Talent</h2>
+                    <p class="animate__animated animate__fadeInUp animate__delay-2s">Creativity is my passion and this is where passion meets purpose. Ready to bring fresh ideas to life? Let's make something amazing together!</p>
                 </div>
             </div>
         </section>
@@ -46,17 +56,17 @@
         <!-- About Section -->
         <section id="about" class="about-section">
             <div class="about-container">
-                <div class="about-image">
+                <div class="about-image animate__animated animate__bounceInLeft">
                     <img src="IMG/about me naba.jpg" alt="Nabila in casual setting">
                 </div>
-                <div class="about-content">
+                <div class="about-content animate__animated animate__fadeInRight">
                     <div class="section-header">
                         <div class="blue-accent"></div>
                         <h2>ABOUT ME</h2>
                     </div>
                     <p>Hey, I'm a 4th-semester Digital Business student who's all about exploring new things and leveling up my skills. With a passion for Marketing, Design, Editing, and Public Speaking, I love bringing creative ideas to life and making an impact.</p>
                     <p>I've dived into different fields, joined various organizations, and learned how to adapt, collaborate, and think strategically. This portfolio is a glimpse into my journey and everything I'm passionate about. Always open to new opportunities—let's connect and create something awesome together! 🚀</p>
-                    <a href="#" class="btn-download">Download CV</a>
+                    <a href="#" class="btn-download animate__animated animate__pulse animate__infinite">Download CV</a>
                 </div>
             </div>
         </section>
@@ -64,13 +74,13 @@
         <!-- Services Section -->
         <section id="services" class="services-section">
             <div class="services-container">
-                <div class="section-title">
+                <div class="section-title animate__animated animate__fadeInDown">
                     <h2>WHAT I OFFER?</h2>
                 </div>
                 
                 <div class="services-grid">
-                    <div class="service-item">
-                        <div class="service-icon blue-bg">
+                    <div class="service-item animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="service-icon blue-bg animate__animated animate__heartBeat animate__delay-2s">
                             <span>Voice Over Magic</span>
                             <div class="sound-wave"></div>
                         </div>
@@ -79,7 +89,7 @@
                         </div>
                     </div>
 
-                    <div class="service-item">
+                    <div class="service-item animate__animated animate__fadeInUp animate__delay-1s">
                         <div class="service-icon purple-gradient">
                             <span>Energetic MC & Host</span>
                         </div>
@@ -88,7 +98,7 @@
                         </div>
                     </div>
 
-                    <div class="service-item">
+                    <div class="service-item animate__animated animate__fadeInUp animate__delay-2s">
                         <div class="service-icon blue-bg">
                             <span>Brand Ambassador</span>
                         </div>
@@ -97,7 +107,7 @@
                         </div>
                     </div>
 
-                    <div class="service-item">
+                    <div class="service-item animate__animated animate__fadeInUp animate__delay-2s">
                         <div class="service-icon purple-gradient">
                             <span>Event Dancer</span>
                         </div>
@@ -106,7 +116,7 @@
                         </div>
                     </div>
 
-                    <div class="service-item">
+                    <div class="service-item animate__animated animate__fadeInUp animate__delay-3s">
                         <div class="service-icon blue-bg">
                             <span>Content Talent</span>
                         </div>
@@ -115,7 +125,7 @@
                         </div>
                     </div>
 
-                    <div class="service-item">
+                    <div class="service-item animate__animated animate__fadeInUp animate__delay-3s">
                         <div class="service-icon purple-gradient">
                             <span>Instagram Design</span>
                         </div>
@@ -130,12 +140,12 @@
         <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio-section">
             <div class="portfolio-container">
-                <div class="section-header">
+                <div class="section-header animate__animated animate__fadeIn">
                     <div class="blue-circle"></div>
                     <h2>MY PROJECT</h2>
                 </div>
                 
-                <div class="portfolio-filter">
+                <div class="portfolio-filter animate__animated animate__fadeIn animate__delay-1s">
                     <button class="filter-btn active" data-filter="all">All</button>
                     <button class="filter-btn" data-filter="mc">MC</button>
                     <button class="filter-btn" data-filter="dance">Traditional Dance</button>
@@ -145,28 +155,28 @@
                 </div>
 
                 <div class="portfolio-grid">
-                    <div class="portfolio-item mc">
+                    <div class="portfolio-item mc animate__animated animate__zoomIn">
                         <img src="IMG/my project 1.jpg" alt="MC work">
                     </div>
-                    <div class="portfolio-item mc">
+                    <div class="portfolio-item mc animate__animated animate__zoomIn animate__delay-1s">
                         <img src="IMG/my project 2.jpg" alt="MC event">
                     </div>
-                    <div class="portfolio-item mc">
+                    <div class="portfolio-item mc animate__animated animate__zoomIn animate__delay-1s">
                         <img src="IMG/my project 8.png" alt="Hosting event">
                     </div>
-                    <div class="portfolio-item dance">
+                    <div class="portfolio-item dance animate__animated animate__zoomIn animate__delay-2s">
                         <img src="IMG/my project 4.jpg" alt="Traditional dance performance">
                     </div>
-                    <div class="portfolio-item content">
+                    <div class="portfolio-item content animate__animated animate__zoomIn animate__delay-2s">
                         <img src="IMG/my project 5.jpg" alt="Content creation">
                     </div>
-                    <div class="portfolio-item content">
+                    <div class="portfolio-item content animate__animated animate__zoomIn animate__delay-3s">
                         <img src="IMG/my project 6.png" alt="Creative content">
                     </div>
-                    <div class="portfolio-item instagram">
+                    <div class="portfolio-item instagram animate__animated animate__zoomIn animate__delay-3s">
                         <img src="IMG/my project 7.jpg" alt="Instagram design">
                     </div>
-                    <div class="portfolio-item others">
+                    <div class="portfolio-item others animate__animated animate__zoomIn animate__delay-4s">
                         <img src="IMG/my project 3.jpg" alt="App design">
                     </div>
                 </div>
@@ -176,11 +186,11 @@
         <!-- Testimonials Section -->
         <section id="testimonials" class="testimonials-section">
             <div class="testimonials-container">
-                <div class="section-subheader">Testimonials</div>
-                <h2 class="section-title">WHAT THEY SAY?</h2>
+                <div class="section-subheader animate__animated animate__fadeIn">Testimonials</div>
+                <h2 class="section-title animate__animated animate__fadeIn animate__delay-1s">WHAT THEY SAY?</h2>
                 
                 <div class="testimonials-grid">
-                    <div class="testimonial-card">
+                    <div class="testimonial-card animate__animated animate__slideInLeft">
                         <div class="testimonial-image">
                             <img src="IMG/dalamo.jpg" alt="Ramdan">
                         </div>
@@ -188,7 +198,7 @@
                         <p class="testimonial-text">Nabila Anastazya is always the first person I turn to when I want to exchange ideas. Her creativity and critical thinking never fail to inspire me, and discussing things with her always leads to insightful conclusions. I have collaborated with Nabila in many events and as MC partners, and every experience has been truly enjoyable. She so Professional and I feel grateful to have had the opportunity to work alongside her, as her passion and dedication always make a positive impact.</p>
                     </div>
                     
-                    <div class="testimonial-card">
+                    <div class="testimonial-card animate__animated animate__slideInUp">
                         <div class="testimonial-image">
                             <img src="IMG/ari.jpg" alt="Taufik Ashari">
                         </div>
@@ -196,7 +206,7 @@
                         <p class="testimonial-text">Her voice is pleasant to listen to—clear, expressive, and full of character. The delivery feels so natural, making it easy for the audience to connect with the message. The audio quality is also excellent, making it perfect for various needs, from events to voiceovers. Overall, I'm beyond satisfied with the results!</p>
                     </div>
                     
-                    <div class="testimonial-card">
+                    <div class="testimonial-card animate__animated animate__slideInRight">
                         <div class="testimonial-image">
                             <img src="IMG/edoxxk.jpg" alt="Edoxxsk">
                         </div>
@@ -210,11 +220,11 @@
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <div class="contact-container">
-                <h2>Contact Me</h2>
-                <p>Got a project in mind? Need a voice, a host, a dancer, or creative visuals to bring your ideas to life? I'd love to collaborate! Let's connect and create something amazing together.</p>
+                <h2 class="animate__animated animate__bounceIn">Contact Me</h2>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">Got a project in mind? Need a voice, a host, a dancer, or creative visuals to bring your ideas to life? I'd love to collaborate! Let's connect and create something amazing together.</p>
                 
-                <div class="social-links">
-                    <a href="https://instagram.com/nabilaanastazya" class="social-icon">
+                <div class="social-links animate__animated animate__fadeIn animate__delay-2s">
+                    <a href="https://instagram.com/nabilaanastazya" class="social-icon animate__animated animate__pulse animate__infinite">
                         <i class="fab fa-instagram"></i>
                         <span>@nabilaanastazya</span>
                     </a>
@@ -236,9 +246,9 @@
                     </a>
                 </div>
                 
-                <p class="contact-footer">Or simply fill out the form below, and I'll get back to you soon! Let's make it happen! 🚀</p>
+                <p class="contact-footer animate__animated animate__fadeIn animate__delay-3s">Or simply fill out the form below, and I'll get back to you soon! Let's make it happen! 🚀</p>
                 
-                <form class="contact-form">
+                <form class="contact-form animate__animated animate__bounceInUp animate__delay-4s">
                     <div class="form-group">
                         <input type="text" placeholder="Your Name" required>
                     </div>
@@ -251,13 +261,13 @@
                     <div class="form-group">
                         <textarea placeholder="Your Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn-submit">Send Message</button>
+                    <button type="submit" class="btn-submit animate__animated animate__pulse animate__infinite">Send Message</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="animate__animated animate__fadeIn">
         <div class="footer-container">
             <p>&copy; 2025 Nabila Creation. All Rights Reserved.</p>
         </div>
@@ -298,6 +308,26 @@
                     });
                 });
             });
+
+            // Scroll animation trigger
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.animate__animated');
+                const windowHeight = window.innerHeight;
+                const scrollY = window.scrollY || window.pageYOffset;
+                
+                elements.forEach(el => {
+                    const elPosition = el.getBoundingClientRect().top + scrollY;
+                    const scrollPosition = scrollY + windowHeight - 100;
+                    
+                    if (scrollPosition > elPosition) {
+                        const animationClass = el.className.match(/animate__\w+/g).find(cls => cls !== 'animate__animated');
+                        el.classList.add(animationClass);
+                    }
+                });
+            };
+            
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Trigger on load
         });
     </script>
 </body>
